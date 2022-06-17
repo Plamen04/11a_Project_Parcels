@@ -29,6 +29,7 @@ namespace _11a_Project_Parcels
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormParcel));
             this.lbl_Head = new System.Windows.Forms.Label();
             this.lbl_ID = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
@@ -150,10 +151,6 @@ namespace _11a_Project_Parcels
             // cb_Type
             // 
             this.cb_Type.FormattingEnabled = true;
-            this.cb_Type.Items.AddRange(new object[] {
-            "Small",
-            "Medium",
-            "Large"});
             this.cb_Type.Location = new System.Drawing.Point(278, 471);
             this.cb_Type.Name = "cb_Type";
             this.cb_Type.Size = new System.Drawing.Size(218, 37);
@@ -221,6 +218,7 @@ namespace _11a_Project_Parcels
             this.Controls.Add(this.txt_ID);
             this.Controls.Add(this.lbl_ID);
             this.Controls.Add(this.lbl_Head);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormParcel";
             this.Text = "\"Parcel\" Mail Services";
             this.Load += new System.EventHandler(this.FormParcel_Load);

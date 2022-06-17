@@ -59,6 +59,11 @@ namespace _11a_Project_Parcels
 
         private void FormParcel_Load(object sender, EventArgs e)
         {
+            List<ParcelType> parcels = parcelController.GetParcelTypes();
+            foreach (var item in parcels)
+            {
+                cb_Type.Items.Add(item.Name);
+            }
             var products = parcelController.GetAll();
             dataGridView1.DataSource = products;
         }

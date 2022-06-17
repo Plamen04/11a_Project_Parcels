@@ -18,6 +18,13 @@ namespace _11a_Project_Parcels.Controller
                 return parcelContext.Parcels.ToList();
             }
         }
+        public List<ParcelType> GetParcelTypes()
+        {
+            using (parcelContext = new ParcelContext())
+            {
+                return parcelContext.ParcelTypes.ToList();
+            }
+        }
         public void Add(Parcel parcel)
         {
             using (parcelContext = new ParcelContext())
